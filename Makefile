@@ -1,2 +1,2 @@
 c89:
-	clang -O3 main.c -std=c89
+	clang main.c -std=c89 -o string
