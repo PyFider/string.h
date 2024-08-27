@@ -3,6 +3,10 @@
 #include "memset.h"
 #include "strncat.h"
 #include "strncmp.h"
-#include "strtok.h" /* TODO */
+#include "strchr.h"
+#include "strrchr.h"
+#include "strtok.h"
 #include "strspn.h"
 #include "strcspn.h"
+#include "memchr.h"
+#include "memcmp.h"
