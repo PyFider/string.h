@@ -5,20 +5,20 @@ char *strtok(char *str, const char *delim)
     if (str == NULL) str = last;
     if (str == NULL) return NULL;
 
-    // Пропускаем начальные разделители
+    /* SKIPPING START SEPARATORS */
     for (;*str && strchr(delim, *str); ++str);
     if (*str == '\0') return NULL;
 
-    // Ищем конец токена
+    /* FINDING END OF TOKEN */
     res = str;
     for (;*str && !strchr(delim, *str); ++str);
 
-	if (*str) {
-        *str = '\0';  // Завершаем токен нулевым символом
-        last = str + 1;  // Сохраняем контекст для следующего вызова
+    if (*str) { /* IF NOT END THEN END TOKEN */
+        *str = '\0';
+        last = str + 1;  /* SAVING CONTEXT FOR NEXT CALL */
         return res;
-	}
+    }
 	
-    last = NULL;  // Если достигли конца строки, сбрасываем контекст
+    last = NULL; /* IF NOT END THEN ABORT CONTEXT */
     return res;
 }
