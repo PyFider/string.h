@@ -13,10 +13,11 @@
 #include "memcmp.h"
 #include "strpbrk.h"
 #include "strnstr.h"
+#include "strerror.h"
+#include "strncpy.h"
 /*
  *strcoll
- *strerror
  *strxfrm
- * */
+*/
 
 #include "strdup.h"
