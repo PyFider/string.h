@@ -1,6 +1,6 @@
 #include "strlen.h"
 #include "memcpy.h"
-#include "memmove.h" /* TODO */
+#include "memmove.h"
 #include "memset.h"
 #include "strncat.h"
 #include "strncmp.h"
